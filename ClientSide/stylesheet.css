@@ -1,0 +1,67 @@
+/* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+.row.content {height: 1800px;}
+
+:root {
+    --main-text-color: white;
+    --main-border-color: white;
+    --main-imageTint-color: rgba(0,0,0,.1);
+    --main-weatherday-color: rgba(0,204,255,.70);
+}
+
+/* Set gray background color and 100% height */
+.sidenav {
+  background-color: var(--main-border-color);
+  height: 100%;
+}
+
+body, html, .sidenav {
+    background-color: black;
+}
+
+hr {         
+    border: 1.5px solid var(--main-border-color);
+}
+
+.sidenav {
+    border-right: 3px solid var(--main-border-color);
+}
+
+h1, h2, h3, h4, h5, h6, p, span {
+    color: var(--main-text-color);
+}    
+
+/* Set black background color, white text and some padding */
+footer {
+  background-color: black;
+  border-top: 3px solid var(--main-border-color);
+  color: var(--main-text-color);
+  padding: 15px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+/*
+@media screen and (max-width: 767px) {
+  .sidenav {
+    height: auto;
+    padding: 15px;
+  }
+  .row.content {height: auto;} 
+}
+*/
+
+.Header {
+    margin: 0px;
+    padding-top: 1em;
+    position: static;
+    display: inline;
+}
+
+#Headerbar {
+    position: absolute;
+    width: 100%;
+    margin-top: 4em;
+    z-index: 2;
+}
